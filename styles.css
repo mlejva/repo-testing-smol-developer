@@ -1,0 +1,35 @@
+@import 'tailwind.css';
+
+body {
+    background-color: #1A202C;
+    color: #A0AEC0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    padding: 50px 0;
+}
+
+.footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+}
