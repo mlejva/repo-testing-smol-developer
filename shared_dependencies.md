@@ -1,15 +1,23 @@
-1. HTML and CSS: Both "index.html" and "styles.css" share the dependency of HTML and CSS. HTML is used to structure the content on the page, while CSS is used to style this content.
+The shared dependencies between the files we are generating are:
 
-2. Tailwind CSS: "tailwind.css" is a dependency for "styles.css" and "index.html". Tailwind CSS is a utility-first CSS framework that is used for styling web applications. It will be used to style the HTML elements in "index.html" and the classes defined in "styles.css".
+1. **Next.js**: This is the main framework used for building the application. It is used in all the files for server-side rendering and routing.
 
-3. DOM Elements: The "index.html" file will contain various DOM elements that may be styled using both "styles.css" and "tailwind.css". The id names of these DOM elements will be shared across these files.
+2. **React**: Next.js is built on top of React, so React components and hooks are used throughout the application files.
 
-4. CSS Classes: The CSS classes defined in "styles.css" and "tailwind.css" will be used in "index.html" to style the DOM elements. These class names are shared dependencies.
+3. **TypeScript**: TypeScript is used in all the `.tsx` files for type checking and improved developer experience.
 
-5. Media Queries: If the website is responsive, media queries defined in "styles.css" will be used in "index.html" to adjust the layout based on the size of the user's viewport.
+4. **Package.json**: This file contains the list of dependencies and scripts for the application. It is referenced by the application during the build and run process.
 
-6. Font and Color Schemes: The font and color schemes defined in "styles.css" and "tailwind.css" will be used in "index.html" to style the text and background colors of the DOM elements. These are shared dependencies.
+5. **tsconfig.json**: This file contains the configuration for TypeScript. It is referenced by all `.tsx` files.
 
-7. External Libraries or Frameworks: If any external libraries or frameworks are used, they will be shared dependencies across all files. For example, if jQuery is used for DOM manipulation, it will be a shared dependency.
+6. **_app.tsx**: This file is a custom App component. It initializes pages and can be used to keep state between page transitions. It is used by all pages in the application.
 
-8. Images and Icons: If any images or icons are used in the website, their file paths will be shared dependencies in "index.html", "styles.css", and "tailwind.css".
+7. **_document.tsx**: This file is a custom Document component. It is used to augment the application's html and body tags. It is used by all pages in the application.
+
+8. **globals.css**: This file contains global styles that are used across all pages in the application.
+
+9. **favicon.ico**: This file is the favicon for the application. It is used by all pages in the application.
+
+10. **.gitignore**: This file specifies intentionally untracked files that Git should ignore. It is used by the Git version control system.
+
+11. **README.md**: This file contains documentation for the application. It is referenced by developers working on the application.
